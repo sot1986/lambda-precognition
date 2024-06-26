@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "moduleResolution": "node10",
+    "strict": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "declaration": true,
+    "noEmit": true,
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "isolatedModules": true
+  },
+  "include": ["./*.ts", "./src/**/*.ts"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}

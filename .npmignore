@@ -1,0 +1,7 @@
+/src
+/.vscode
+/node_modules
+
+/eslint.config.js
+/tsconfig.json
+/tsup.config.ts

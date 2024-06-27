@@ -1,7 +1,8 @@
 /src
 /.vscode
 /node_modules
+/playground
+/tests
 
 /eslint.config.js
 /tsconfig.json
-/tsup.config.ts

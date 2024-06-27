@@ -1,9 +1,13 @@
 {
   "name": "lambda-precognition",
+  "type": "module",
   "version": "0.0.1",
   "description": "Event handler implementing Laravel precognition protocol and perform backend validation.",
   "author": "sot1986 <matteo.presot@gmail.com> (https://presot-studio.it)",
   "license": "MIT",
+  "repository": {
+    "url": "https://github.com/sot1986/lambda-precognition"
+  },
   "keywords": [
     "precogntion",
     "nuxt-precognition"
@@ -11,21 +15,25 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
-  "repository": {
-    "url": "https://github.com/sot1986/lambda-precognition"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "vitest",
+    "test:once": "vitest run",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "build": "tsup",
-    "release": "tsup && publish"
+    "release": "npm run test:once && npm run lint && npm run build && npm publish",
+    "release:locally": "npm run test:once && npm run lint && npm run build && npm pack && mv lambda-precognition-*.tgz ../Released",
+    "build": "tsup"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.21.1",
+    "@changesets/cli": "^2.27.6",
     "@types/aws-lambda": "^8.10.140",
     "eslint": "9.4.0",
     "tsup": "^8.1.0",
-    "typescript": "^5.5.2"
+    "typescript": "^5.5.2",
+    "vitest": "^1.6.0"
   }
 }

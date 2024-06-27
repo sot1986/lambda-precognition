@@ -113,7 +113,7 @@ function handlePartialValidationErrorsData(
   })
 
   if (!data.message) {
-    return createResponse(204, undefined, { 'Precognition': 'true', 'Precognition-Success': 'true'})
+    return createResponse(204, undefined, { 'Precognition': 'true', 'Precognition-Success': 'true' })
   }
 
   return createResponse(

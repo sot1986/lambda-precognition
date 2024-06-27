@@ -163,7 +163,4 @@ it('returns success if the validation error is not related to the validating key
   const response = await handler(event) as LambdaResponse
 
   expect(response.statusCode).toBe(204)
-
-
-
 })

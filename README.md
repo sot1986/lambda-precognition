@@ -9,7 +9,11 @@ Inspired by [Laravel Precognition](https://laravel.com/docs/11.x/precognition), 
 It works great with [Nuxt-Precognition](https://www.npmjs.com/package/nuxt-precognition).
 
 ## How use it
-Import the definePrecognitiveHandler from the package, and use it as Lambda funcation handler:
+1. Install it in your package.json:
+   ```sh
+   npm install lambda-precognition
+   ```
+2. Import the definePrecognitiveHandler from the package, and use it as main handler:
 
 ```ts
 import { definePrecognitiveHandler } from 'lambda-precognition'
@@ -27,8 +31,13 @@ export const handler = definePrecognitiveHandler({
 }, [/* ValidationParsers */])
 ```
 
+Notice that there are three "lifecycle hooks".
+- `before`: put here validation logic. It runs before the main handler. In case of _precognitive request_, it will be the only function to be triggered.
+- `main`: standard function where writing business logic.
+- `after`: in case you need to trigger some other behaviours, you can leverage this hook,, that runs as final handler.
+
 ### What are validationParsers
-ValidationParsers are simple functions that accept and Error parameters and extrace the ValidationErrorsData object (if any).
+ValidationParsers are simple functions that accept an Error as input parameter, and return ValidationErrorsData object (if any).
 
 ```ts
 export type ValidationErrors = Record<string, string | string[]>
@@ -55,3 +64,5 @@ export const handler = definePrecognitiveHandler({
   }
 }, ['ZOD_ERROR_PARSER'])
 ```
+
+For more details please refer to (this repo)[https://github.com/sot1986/nuxt-precognition]

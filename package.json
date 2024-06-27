@@ -1,12 +1,12 @@
 {
   "name": "lambda-precognition",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Event handler implementing Laravel precognition protocol and perform backend validation.",
   "author": "sot1986 <matteo.presot@gmail.com> (https://presot-studio.it)",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/sot1986/lambda-precognition"
+    "url": "git+https://github.com/sot1986/lambda-precognition.git"
   },
   "keywords": [
     "precogntion",

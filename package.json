@@ -20,7 +20,7 @@
     "test:once": "vitest run",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "release": "npm run test:once && npm run lint && npm run build && npm publish",
+    "release": "npm run test:once && npm run lint && npm run build && npm publish && git push --follow-tags",
     "release:locally": "npm run test:once && npm run lint && npm run build && npm pack && mv lambda-precognition-*.tgz ../Released",
     "build": "tsup"
   },

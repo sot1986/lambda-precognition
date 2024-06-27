@@ -1,7 +1,7 @@
 {
   "name": "lambda-precognition",
   "type": "module",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Event handler implementing Laravel precognition protocol and perform backend validation.",
   "author": "sot1986 <matteo.presot@gmail.com> (https://presot-studio.it)",
   "license": "MIT",

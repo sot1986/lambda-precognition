@@ -68,11 +68,11 @@ export const handler = definePrecognitiveHandler({
 For more details please refer to (this repo)[https://github.com/sot1986/nuxt-precognition]
 
 <!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/nuxt-precognition/latest.svg?style=flat&colorA=020420&colorB=00DC82
-[npm-version-href]: https://npmjs.com/package/nuxt-precognition
+[npm-version-src]: https://img.shields.io/npm/v/lambda-precognition/latest.svg?style=flat&colorA=020420&colorB=00DC82
+[npm-version-href]: https://npmjs.com/package/lambda-precognition
 
-[npm-downloads-src]: https://img.shields.io/npm/dm/nuxt-precognition.svg?style=flat&colorA=020420&colorB=00DC82
-[npm-downloads-href]: https://npmjs.com/package/nuxt-precognition
+[npm-downloads-src]: https://img.shields.io/npm/dm/lambda-precognition.svg?style=flat&colorA=020420&colorB=00DC82
+[npm-downloads-href]: https://npmjs.com/package/lambda-precognition
 
-[license-src]: https://img.shields.io/npm/l/nuxt-precognition.svg?style=flat&colorA=020420&colorB=00DC82
-[license-href]: https://npmjs.com/package/nuxt-precognition
+[license-src]: https://img.shields.io/npm/l/lambda-precognition.svg?style=flat&colorA=020420&colorB=00DC82
+[license-href]: https://npmjs.com/package/lambda-precognition
